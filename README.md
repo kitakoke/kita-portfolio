@@ -139,8 +139,8 @@ take1-project/
 | EFS (wp-content)                       | ✅ 完成         | 永続ボリューム構成                          
 | ECS AutoScaling                        | ✅ 完成         | Target Tracking (CPU 70%)                   
 | GitHub Actions (OIDC)                  | ✅ 完成         | ECR Push → ECS Deploy 自動化                 
-| RDS (Aurora MySQL)                     | 🟡 構築中　　　 | IaC化設計済み（未公開）                      
-| Redis (ElastiCache)                    | 🟡 構築中　　　 | WooCommerceキャッシュ層（設計済）             
+| RDS (Aurora MySQL)                     | ✅ 実装経験あり| IaC化設計済み（未公開）                      
+| Redis (ElastiCache)                    | ✅ 実装経験あり| WooCommerceキャッシュ層（設計済）             
 | RDS Proxy                              | ⚪ 設計中       | IAM認証、コネクションプーリング設計中                 
 | API Gateway / Lambda / DynamoDB        | ✅ 実装経験あり | Stripe Webhook連携                          
 | AWS WAF                                | ✅ 実装経験あり | Managed Rules + Custom IPSet + Rate-Based 制御 
@@ -185,9 +185,9 @@ take1-project/
 ──────────────────────────────────────────────────────────────────────────────
 | コンポーネント          | ステータス        | 備考                                     
 |-------------------------|-------------------|------------------------------------------
-| RDS (Aurora MySQL)      | 🟡 構築経験あり  | Terraform IaC化予定                      
+| RDS (Aurora MySQL)      | ✅ 実装経験あり  | Terraform IaC化予定                      
 | RDS Proxy               | ⚪ 設計中        | ECS再デプロイ時のDB安定化対策            
-| Redis (ElastiCache)     | 🟡 構築経験あり  | WooCommerceセッション/キャッシュ層       
+| Redis (ElastiCache)     | ✅ 実装経験あり  | WooCommerceセッション/キャッシュ層       
 ──────────────────────────────────────────────────────────────────────────────
 
 
@@ -253,4 +253,3 @@ AWS Managed Rules + IPSet + Rate-Based Rules による攻撃防御を実装。
 本リポジトリは技術紹介を目的として一部構成を公開したものであり、  
 商用利用・再配布はご遠慮ください。
 ──────────────────────────────────────────────────────────────────────────────
-```

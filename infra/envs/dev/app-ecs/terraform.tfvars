@@ -46,4 +46,4 @@ log_group_name = "/ecs/take1-ecs-dev"
 php_environment   = []
 nginx_environment = []
 
-desired_count = 0
+desired_count = 0 #任意で設定
